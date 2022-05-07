@@ -1,0 +1,100 @@
+{
+	"common": {
+		"name": "rl-ventilation",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "RL Ventilation",
+		"titleLang": {
+			"en": "RL Ventilation",
+			"de": "RL-Lüftung",
+			"ru": "РЛ Вентиляция",
+			"pt": "Ventilação RL",
+			"nl": "RL Ventilatie",
+			"fr": "Ventilation RL",
+			"it": "RL Ventilazione",
+			"es": "Ventilación LR",
+			"pl": "Wentylacja RL",
+			"zh-cn": "RL 通风"
+		},
+		"desc": {
+			"en": "Adapter to RL ventilation devices (e.g. RL50RWV)",
+			"de": "Adapter an RL-Lüftungsgeräte (z. B. RL50RWV)",
+			"ru": "Адаптер для аппаратов ИВЛ RL (например, RL50RWV)",
+			"pt": "Adaptador para dispositivos de ventilação RL (por exemplo, RL50RWV)",
+			"nl": "Adapter naar RL-beademingsapparaten (bijv. RL50RWV)",
+			"fr": "Adaptateur pour appareils de ventilation RL (par ex. RL50RWV)",
+			"it": "Adattatore per dispositivi di ventilazione RL (es. RL50RWV)",
+			"es": "Adaptador para dispositivos de ventilación RL (por ejemplo, RL50RWV)",
+			"pl": "Adapter do urządzeń wentylacyjnych RL (np. RL50RWV)",
+			"zh-cn": "RL 通风设备的适配器（例如 RL50RWV）"
+		},
+		"authors": [
+			"dma7 <dma7@mailbox.org>"
+		],
+		"keywords": [
+			"ventilation",
+			"rl",
+			"raumluft"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "rl-ventilation.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/dma7/ioBroker.rl-ventilation/main/admin/rl-ventilation.png",
+		"readme": "https://github.com/dma7/ioBroker.rl-ventilation/blob/main/README.md",
+		"loglevel": "info",
+		"mode": "daemon",
+		"type": "climate-control",
+		"compact": true,
+		"connectionType": "local",
+		"dataSource": "poll",
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=2.0.0"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
