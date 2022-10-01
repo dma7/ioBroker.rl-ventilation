@@ -18,7 +18,7 @@
     "url": "git@github.com:dma7/ioBroker.rl-ventilation.git"
   },
   "dependencies": {
-    "@iobroker/adapter-core": "^2.6.0"
+    "@iobroker/adapter-core": "^2.6.6"
   },
   "devDependencies": {
     "@alcalzone/release-script": "^2.2.2",
